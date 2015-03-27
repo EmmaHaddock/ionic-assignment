@@ -12,3 +12,30 @@ angular.module('calorific', ['ionic'])
     }
   });
 })
+
+function incDec(plusMinus) {
+      var plusMinus = parseInt(plusMinus);
+      var currentCalories = parseInt(document.getElementById("myCalories").innerHTML) + plusMinus;
+      //alert(currentLife);
+     
+     if(currentCalories < 0)
+     {
+       currentCalories = 0;
+     }
+     else if(currentCalories > 5000)
+     {
+       currentCalories = 5000;
+     }
+     else
+     {
+       document.getElementById("myCalories").innerHTML = currentCalories;
+     }
+   }
+    //function randomDiceroll() {
+      //document.getElementById("diceRoll").innerHTML = Math.floor(Math.random() *(20-1+1)+1);
+    //}
+    
+    function reset() {
+      document.getElementById("myCalories").innerHTML = 0;
+      //document.getElementById("diceRoll").innerHTML = 0;
+    } 
