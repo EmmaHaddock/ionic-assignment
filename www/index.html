@@ -29,25 +29,39 @@
       </ion-header-bar>
       <ion-content>
 
-	<div class="list card">
+	<div class=“calories”>
+   <center><h2>
+        <div id="myCalories">
+          0
+        </div>
+      </h2></center>
+   </div>
 
   <div class="item item-avatar">
     <img src="http://ionicframework.com/img/docs/mcfly.jpg">
-    <h2>Marty McFly</h2>
-    <p>November 05, 1955</p>
+    <h2>White Bread</h2>
+    <p></p>
   </div>
 
   <div class="item item-body">
-    <img class="full-image" src="http://ionicframework.com/img/docs/delorean.jpg">
+    <!--img src="img/delorean.jpg"-->
     <p>
-      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-      the content is from a card-body consisting of an image and paragraph text. The footer
-      consists of tabs, icons aligned left, within the card-footer.
+      White bread <i>without</i> the crust (0.04 oz) contains 32 calories per slice.
+      You need to do 9 minutes of walking, 4 minutes of jogging, or 5 minutes of cycling to burn of one slice of bread.</p></p>
     </p>
-    <p>
-      <a href="#" class="subdued">13 Like</a>
-      <a href="#" class="subdued">52 Comments</a>
-    </p>
+
+
+        <div>
+   <center>
+    <a class="button button-royal" onclick="incDec('-32')">
+      -32
+    </a>
+    <a class="button button-positive" onclick="incDec('+32')">
+	 +32
+    </a>
+   </center>
+  </div>
+  </div>
   </div>
 
   <div class="item tabs tabs-secondary tabs-icon-left">
