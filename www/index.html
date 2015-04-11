@@ -24,19 +24,22 @@
   <body ng-app="calorific">
 
     <ion-pane>
+	<!--Header bar is a green colour to go with health theme -->
       <ion-header-bar class="bar-balanced">
+	<!--The name of my app is Calorielator as in a calorie calculator-->
         <h1 class="title">Calorielator</h1>
       </ion-header-bar>
       <ion-content>
 
+	<!-- This shows the user how many calories they've taken when they have clicked the buttons -->
 	<div class=“calories”>
-   <center><h2>
+   <center><h2>Your Calorie Intake:
         <div id="myCalories">
          0
         </div>
       </h2></center>
    </div>
-
+	<!-- This is a card-showcase -->
   <div class="item item-avatar">
     <img src="http://ionicframework.com/img/docs/mcfly.jpg">
     <center><h2>White Bread</h2></center>
@@ -61,9 +64,6 @@
 	 +32
     </a>
    <center>
-  </div>
-</br>
-    <center><a class="button button-energized" onclick="reset()">Reset</a></center>
   </div>
   </div>
 	
@@ -91,9 +91,6 @@
     </a>
    </center>
   </div>
-</br>
-    <center><a class="button button-energized" onclick="reset()">Reset</a></center>
-  </div>
   </div>
 
 <div class="item item-avatar">
@@ -120,9 +117,6 @@
     </a>
    </center>
   </div>
-</br>
-    <center><a class="button button-energized" onclick="reset()">Reset</a></center>
-  </div>
 </div>
 
 <div class="item item-avatar">
@@ -148,9 +142,6 @@
      +142
     </a>
    </center>
-  </div>
-</br>
-    <center><a class="button button-energized" onclick="reset()">Reset</a></center>
   </div>
   </div>
 
@@ -190,11 +181,14 @@
     </a>
    </center>
   </div>
-</br>
-    <center><a class="button button-energized" onclick="reset()">Reset</a></center>
   </div>
+
+</br>
+	<div>
+	<center><a class="button button-energized" onclick="reset()">Reset</a></center>
   </div>
    </div>
+
       </ion-content>
     </ion-pane>
 
