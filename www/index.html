@@ -212,6 +212,59 @@ Click on the buttons below the food items to add the calories to your total show
    </center>
    </div>
    </div>
+<div class="item item-avatar">
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSufoX-7_7VFYgFYQeu2Ie8N1C7ARlNDkyzerGFWARaY6k9yeoJ1g">
+    <center><h2>Average Beef Burger</h2></center>
+    <p></p>
+  </div>
+
+<div class="item item-body">
+    <img class="full-image" src="http://artiesmeats.com/wp-content/uploads/2012/03/Lamb-Burger2.jpg">
+    <p>
+      One average beef burger (4 oz) contains 306 calories.
+      You need to do 85 minutes of walking, 35 minutes of jogging, or 47 minutes of cycling to burn off one burger!
+    </p>
+
+        <!-- Added buttons to add up and take away calories -->
+        <div>
+   <center>
+    <a class="button button-positive" onclick="incDec('-306')" align="left">
+      -306
+    </a>
+
+    <a class="button button-calm" onclick="incDec('+306')" align="right">
+         +306
+    </a>
+</center>
+</div>
+</div>
+
+<div class="item item-avatar">
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSufoX-7_7VFYgFYQeu2Ie8N1C7ARlNDkyzerGFWARaY6k9yeoJ1g">
+    <center><h2>Chips/Fries</h2></center>
+    <p></p>
+  </div>
+
+<div class="item item-body">
+    <img class="full-image" src="http://eddies.com.ng/wp-content/uploads/2014/01/MCC13.jpg">
+    <p>
+      Oven cooked chips/fries (4 oz) contains 188 calories.
+      You need to do 49 minutes of walking, 21 minutes of jogging, or 25 minutes of cycling to burn off one serving of chips/fries!
+    </p>
+
+        <!-- Added buttons to add up and take away calories -->
+        <div>
+   <center>
+    <a class="button button-positive" onclick="incDec('-188')" align="left">
+      -188
+    </a>
+
+    <a class="button button-calm" onclick="incDec('+188')" align="right">
+         +188
+    </a>
+</center>
+</div>
+</div>
 </br>
 	<div>
 	<center><a class="button button-energized" onclick="reset()">Reset</a></center>
@@ -219,6 +272,7 @@ Click on the buttons below the food items to add the calories to your total show
    <br /> 
  </div>
    </div>
+<br />
       </ion-content>
 	<div class="bar bar-footer bar-balanced">
   <div class="title">Emma Haddock's Calorie Counter</div>
@@ -229,7 +283,7 @@ Click on the buttons below the food items to add the calories to your total show
 		function incDec(plusMinus) {
       var plusMinus = parseInt(plusMinus);
       var currentCalories = parseInt(document.getElementById("myCalories").innerHTML) + plusMinus;
-      //alert(currentLife);
+ 
      
      if(currentCalories < 0)
      {
